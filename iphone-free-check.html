@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone უფასო შემოწმება | IMEI სკანერი პრო</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="grid-lines"></div>
+
+    <!-- Боковое меню -->
+    <div class="sidebar">
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <div class="menu-items">
+            <div class="menu-header">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>შემოწმების ტიპები</h3>
+            </div>
+            
+            <div class="menu-category">
+                <div class="category-header">
+                    <i class="fab fa-apple"></i>
+                    <span>Apple-ის შემოწმება</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="submenu">
+                    <a href="iphone-check.html">
+                        <i class="fas fa-dollar-sign"></i> 
+                        iPhone ფასიანი შემოწმება
+                    </a>
+                    <a href="iphone-free-check.html" class="active">
+                        <i class="fas fa-unlock-alt"></i> 
+                        iPhone უფასო შემოწმება
+                    </a>
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <div class="category-header">
+                    <i class="fab fa-android"></i>
+                    <span>Android-ის შემოწმება</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="submenu">
+                    <a href="#">
+                        <i class="fas fa-mobile"></i> 
+                        Samsung
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-mobile"></i> 
+                        Xiaomi
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-mobile"></i> 
+                        Huawei
+                    </a>
+                </div>
+            </div>
+            
+            <div class="menu-category">
+                <div class="category-header">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>უსაფრთხოება</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="submenu">
+                    <a href="#">
+                        <i class="fas fa-search"></i> 
+                        ბლოკირების შემოწმება
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-history"></i> 
+                        მოწყობილობების ისტორია
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="logo"><i class="fab fa-apple"></i> iPhone უფასო შემოწმება</h1>
+            <p class="subtitle">მიიღეთ ძირითადი ინფორმაცია თქვენი iPhone-ის სტატუსზე უფასოდ</p>
+        </header>
+
+        <div class="main-content">
+            <div class="form-section">
+                <h2 class="section-title"><i class="fas fa-phone-alt"></i> iPhone-ის მონაცემები</h2>
+                <div class="input-group">
+                    <label for="imei">შეიყვანეთ iPhone-ის IMEI ან სერიული ნომერი:</label>
+                    <input type="text" id="imei" placeholder="123456789012345" maxlength="20">
+                </div>
+                
+                <button id="check-btn" class="btn pulse">
+                    <i class="fas fa-search"></i> შემოწმების დაწყება
+                </button>
+
+                <div class="api-key">
+                    <i class="fas fa-key"></i> გამოყენებულია სტანდარტული API
+                </div>
+
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>iPhone-ის მონაცემების მოძიება...</p>
+                </div>
+            </div>
+
+            <div class="result-section">
+                <h2 class="section-title"><i class="fas fa-file-contract"></i> შემოწმების შედეგები</h2>
+                <div class="status-indicator">
+                    <div class="status-dot" id="status-dot"></div>
+                    <span id="status-text">მოლოდინი მონაცემების შეყვანისა...</span>
+                </div>
+                <div class="result-container" id="result-container">
+                    <div class="premium-result">
+                        <i class="fab fa-apple"></i>
+                        <h3>უფასო iPhone შემოწმება</h3>
+                        <p>შეიყვანეთ თქვენი iPhone-ის IMEI ან სერიული ნომერი ძირითადი ინფორმაციის მისაღებად.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>iPhone უფასო შემოწმება &copy; <span id="current-year">2023</span> | IMEI სკანერი პრო</p>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/iphone-free-check.js"></script>
+</body>
+</html>
